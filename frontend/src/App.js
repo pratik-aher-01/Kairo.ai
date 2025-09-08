@@ -11,7 +11,7 @@ function App() {
     setChat([...chat, userMessage]);
 
     // Call your backend
-    const res = await fetch("https://your-backend.onrender.com/chat", {
+    const res = await fetch("https://kairo-ai.onrender.com", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message: input }),
